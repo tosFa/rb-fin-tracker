@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: rb-fin-tracker_development
+  database: rb-fin-tracker
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: rb-fin-tracker_production
-  username: rb-fin-tracker
+  database: rb-fin-tracker
+  username: fatos.hoti
   password: <%= ENV['RB-FIN-TRACKER_DATABASE_PASSWORD'] %>
