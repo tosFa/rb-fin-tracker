@@ -12,7 +12,7 @@ var init_stock_lookup = function() {
 
   $("#stock-lookup-form").on('ajax:error', function(event, xhr, status, error){
     $("#stock-lookup-results").replaceWith(' ');
-    $("#stock-lookup-errors").replaceWith('Not found');
+    $("#stock-lookup-errors").html('Not found');
     hide_spinner();
   });
 }
